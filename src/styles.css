@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black; /* Couleur de fond autour du CV */
+}
+
+.cv {
+  width: 210mm; /* Largeur A4 */
+  height: 297mm; /* Hauteur A4 */
+  margin: 20px auto; /* Centrer le CV */
+  background: white;
+  /* overflow: hidden; */
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .cv {
+    margin: 0;
+    padding: 20mm;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+}
