@@ -1,4 +1,5 @@
 import React from "react";
+import LineItem from "./LineItem";
 import CVSubHeader from "./CVSubHeader";
 import photo from "../img/photo_cv.png";
 import { IconType } from "react-icons";
@@ -25,9 +26,13 @@ const ImageItem = () => {
   return (
     <div>
       <img src={photo} alt="Logo" className="w-64 h-64 object-cover " />
+      <LineItem lineHeight="h-[1px]" />
       <ContactItem icon={FaMobileAlt} text="06 67 87 94 26" />
+      <LineItem lineHeight="h-[1px]" />
       <ContactItem icon={FaEnvelope} text="lacuey.david@gmail.com" />
+      <LineItem lineHeight="h-[1px]" />
       <ContactItem icon={FaMapMarkerAlt} text="Paris, France" />
+      <LineItem lineHeight="h-[1px]" />
     </div>
   );
 };
@@ -76,25 +81,9 @@ const CompetencesItem = () => {
       />
       <div className="flex flex-col gap-1">
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">C 99</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">C++ 98</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
           <span className="w-36 text-xs ">REACT</span>
           <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
+          <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
         </div>
@@ -102,7 +91,7 @@ const CompetencesItem = () => {
         <div className="flex space-between gap-1 items-center">
           <span className="w-36 text-xs ">TYPESCRIPT</span>
           <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
+          <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
         </div>
@@ -120,6 +109,22 @@ const CompetencesItem = () => {
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>
+          <div className="border-2 border-black w-4 h-4 rounded"></div>
+        </div>
+
+        <div className="flex space-between gap-1 items-center">
+          <span className="w-36 text-xs ">C 99</span>
+          <div className="bg-black w-4 h-4 rounded"></div>
+          <div className="bg-black w-4 h-4 rounded"></div>
+          <div className="border-2 border-black w-4 h-4 rounded"></div>
+          <div className="border-2 border-black w-4 h-4 rounded"></div>
+        </div>
+
+        <div className="flex space-between gap-1 items-center">
+          <span className="w-36 text-xs ">C++ 98</span>
+          <div className="bg-black w-4 h-4 rounded"></div>
+          <div className="border-2 border-black w-4 h-4 rounded"></div>
+          <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
         </div>
       </div>

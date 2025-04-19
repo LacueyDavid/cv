@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function LineItem() {
-  return <div className="w-full h-[3px] bg-gray-400 rounded"></div>;
+type LineItemProps = {
+  lineHeight?: string;
+};
+
+export default function LineItem({ lineHeight = "h-[3px]" }: LineItemProps) {
+  return <div className={`w-full ${lineHeight} bg-gray-400 rounded`}></div>;
 }

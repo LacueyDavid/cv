@@ -4,15 +4,24 @@ import { ReactNode } from "react";
 type CVSubHeaderProps = {
   icon: ReactNode;
   title: string;
+  containerWidth?: string;
 };
 
-export default function CVSubHeader({ icon, title }: CVSubHeaderProps) {
+export default function CVSubHeader({
+  icon,
+  title,
+  containerWidth = "w-16",
+}: CVSubHeaderProps) {
   return (
     <div>
       <CVSubHeaderLine />
-      <div className="w-full flex gap-3">
-        <div className="flex justify-center items-center w-12 h-8">{icon}</div>
-        <div className="flex justify-center items-center">
+      <div className="w-full flex">
+        <div
+          className={`flex justify-center items-center ${containerWidth} h-8`}
+        >
+          {icon}
+        </div>
+        <div className="flex w-full pl-4 items-center">
           <h3 className="font-bold text-sm">{title}</h3>
         </div>
       </div>
