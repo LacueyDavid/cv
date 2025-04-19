@@ -1,6 +1,6 @@
 import React from "react";
 import CVSubHeader from "./CVSubHeader";
-import photo from "../img/photo_cv.jpg";
+import photo from "../img/photo_cv.png";
 import { IconType } from "react-icons";
 import { PiStudentFill } from "react-icons/pi";
 import { IoIosPeople } from "react-icons/io";
@@ -14,8 +14,8 @@ interface ContactItemProps {
 
 const ContactItem = ({ icon: Icon, text }: ContactItemProps) => {
   return (
-    <div className="flex items-center gap-2 bg-gray-600 w-64 shadow shadow-black/40">
-      <Icon className="text-white w-10 h-8 p-1 bg-gray-600 shadow shadow-black/40 bg-gradient-to-r from-gray-500 from-60% via-gray-700 via-90% to-gray-700 to-100%" />
+    <div className="flex items-center gap-2 bg-gray-600 w-64 ">
+      <Icon className="text-white w-10 h-8 p-1 bg-gray-500 " />
       <span className="text-white">{text}</span>
     </div>
   );
@@ -24,11 +24,7 @@ const ContactItem = ({ icon: Icon, text }: ContactItemProps) => {
 const ImageItem = () => {
   return (
     <div>
-      <img
-        src={photo}
-        alt="Logo"
-        className="w-64 h-64 object-cover shadow shadow-black/40"
-      />
+      <img src={photo} alt="Logo" className="w-64 h-64 object-cover " />
       <ContactItem icon={FaMobileAlt} text="06 67 87 94 26" />
       <ContactItem icon={FaEnvelope} text="lacuey.david@gmail.com" />
       <ContactItem icon={FaMapMarkerAlt} text="Paris, France" />
@@ -40,14 +36,14 @@ const FormationItem = () => {
   return (
     <div className="gap-6 flex justify-center flex-col w-full px-4">
       <CVSubHeader
-        icon={<PiStudentFill className="w-8 h-8" />}
+        icon={<PiStudentFill className="w-6 h-6" />}
         title="FORMATION"
       />
       <div className="flex flex-col gap-1">
-        <span className="font-bold w-52 text-base ">
+        <span className="font-bold w-52 text-xs ">
           ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE
         </span>
-        <span className="w-52 text-base ">Ecole 42 / Paris / 2024</span>
+        <span className="w-52 text-xs">Ecole 42 / Paris / 2024</span>
       </div>
     </div>
   );
@@ -57,15 +53,15 @@ const LogicielsItem = () => {
   return (
     <div className="gap-6 flex justify-center flex-col w-full px-4">
       <CVSubHeader
-        icon={<IoIosPeople className="w-8 h-8" />}
+        icon={<IoIosPeople className="w-6 h-6" />}
         title="LOGICIELS"
       />
       <div className="flex flex-col gap-1">
-        <span className="w-52 text-base ">VISUAL STUDIO CODE</span>
-        <span className="w-52 text-base ">NEOVIM</span>
-        <span className="w-52 text-base ">SHELL</span>
-        <span className="w-52 text-base ">DOCKER</span>
-        <span className="w-52 text-base ">GIT</span>
+        <span className="w-52 text-xs ">VISUAL STUDIO CODE</span>
+        <span className="w-52 text-xs ">NEOVIM</span>
+        <span className="w-52 text-xs ">SHELL</span>
+        <span className="w-52 text-xs ">DOCKER</span>
+        <span className="w-52 text-xs ">GIT</span>
       </div>
     </div>
   );
@@ -75,12 +71,12 @@ const CompetencesItem = () => {
   return (
     <div className="gap-6 flex justify-center flex-col w-full px-4">
       <CVSubHeader
-        icon={<BsGearFill className="w-6 h-6" />}
+        icon={<BsGearFill className="w-5 h-5" />}
         title="COMPETENCES"
       />
       <div className="flex flex-col gap-1">
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-base ">C 99</span>
+          <span className="w-36 text-xs ">C 99</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
@@ -88,7 +84,7 @@ const CompetencesItem = () => {
         </div>
 
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-base ">C++ 98</span>
+          <span className="w-36 text-xs ">C++ 98</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
@@ -96,7 +92,7 @@ const CompetencesItem = () => {
         </div>
 
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-base ">REACT</span>
+          <span className="w-36 text-xs ">REACT</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
@@ -104,7 +100,7 @@ const CompetencesItem = () => {
         </div>
 
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-base ">TYPESCRIPT</span>
+          <span className="w-36 text-xs ">TYPESCRIPT</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
@@ -112,7 +108,7 @@ const CompetencesItem = () => {
         </div>
 
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-sm">MYSQL / MARIADB</span>
+          <span className="w-36 text-xs">MYSQL / MARIADB</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="border-2 border-black w-4 h-4 rounded"></div>
@@ -120,7 +116,7 @@ const CompetencesItem = () => {
         </div>
 
         <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-base ">LINUX / UNIX</span>
+          <span className="w-36 text-xs ">LINUX / UNIX</span>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>
           <div className="bg-black w-4 h-4 rounded"></div>

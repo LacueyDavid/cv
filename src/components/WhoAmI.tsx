@@ -21,7 +21,7 @@ function Metier() {
 
 function EnQuelquesMots() {
   return (
-    <p>
+    <p className="text-sm">
       Je suis étudiant à l'école 42, actuellement à la recherche d’un stage. Mon
       parcours à 42 m’a permis de renforcer mes compétences en programmation, en
       résolution de problèmes et en travail d’équipe à travers des projets
@@ -34,7 +34,7 @@ function Experiences() {
   return (
     <div className="flex gap-4 flex-col">
       <CVSubHeader
-        icon={<FaBriefcase className="w-6 h-6" />}
+        icon={<FaBriefcase className="w-5 h-5" />}
         title="EXPERIENCES"
       />
 

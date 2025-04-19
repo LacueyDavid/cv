@@ -13,7 +13,7 @@ export default function CVSubHeader({ icon, title }: CVSubHeaderProps) {
       <div className="w-full flex gap-3">
         <div className="flex justify-center items-center w-12 h-8">{icon}</div>
         <div className="flex justify-center items-center">
-          <h3 className="font-bold text-lg">{title}</h3>
+          <h3 className="font-bold text-sm">{title}</h3>
         </div>
       </div>
       <CVSubHeaderLine />
