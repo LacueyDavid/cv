@@ -16,7 +16,9 @@ interface ContactItemProps {
 const ContactItem = ({ icon: Icon, text }: ContactItemProps) => {
   return (
     <div className="flex items-center gap-2 bg-gray-600 w-64 ">
-      <Icon className="text-white w-10 h-8 p-1 bg-gray-500 " />
+      <div className="flex items-center justify-center w-10">
+        <Icon className="text-white w-10 h-8 p-1 bg-gray-600" />
+      </div>
       <span className="text-white">{text}</span>
     </div>
   );
@@ -29,9 +31,12 @@ const ImageItem = () => {
       <LineItem lineHeight="h-[1px]" />
       <ContactItem icon={FaMobileAlt} text="06 67 87 94 26" />
       <LineItem lineHeight="h-[1px]" />
-      <ContactItem icon={FaEnvelope} text="lacuey.david@gmail.com" />
+      <ContactItem icon={FaEnvelope} text="dlacuey@student.42.fr" />
       <LineItem lineHeight="h-[1px]" />
-      <ContactItem icon={FaMapMarkerAlt} text="Paris, France" />
+      <ContactItem
+        icon={FaMapMarkerAlt}
+        text="101 Avenue Laferrière, 94000 Créteil, France"
+      />
       <LineItem lineHeight="h-[1px]" />
     </div>
   );
@@ -63,7 +68,7 @@ const LogicielsItem = () => {
       />
       <div className="flex flex-col gap-1">
         <span className="w-52 text-xs ">VISUAL STUDIO CODE</span>
-        <span className="w-52 text-xs ">NEOVIM</span>
+        <span className="w-52 text-xs ">NEOVIM / VIM</span>
         <span className="w-52 text-xs ">SHELL</span>
         <span className="w-52 text-xs ">DOCKER</span>
         <span className="w-52 text-xs ">GIT</span>

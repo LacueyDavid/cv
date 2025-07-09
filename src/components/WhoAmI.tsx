@@ -1,6 +1,7 @@
 import React from "react";
 import LineItem from "./LineItem";
 import { FaBriefcase } from "react-icons/fa";
+import { GiMountainClimbing } from "react-icons/gi";
 import CVSubHeader from "./CVSubHeader";
 
 function Name() {
@@ -22,10 +23,10 @@ function Metier() {
 function EnQuelquesMots() {
   return (
     <p className="text-sm">
-      Je suis étudiant à l'école 42, actuellement à la recherche d’un stage. Mon
-      parcours à 42 m’a permis de renforcer mes compétences en programmation, en
-      résolution de problèmes et en travail d’équipe à travers des projets
-      concrets.
+      Je suis étudiant à l'école 42, actuellement à la recherche d’un stage et
+      disponible immédiatement. Mon parcours à 42 m’a permis de renforcer mes
+      compétences en programmation, en résolution de problèmes et en travail
+      d’équipe à travers des projets concrets.
     </p>
   );
 }
@@ -91,6 +92,65 @@ function Experiences() {
   );
 }
 
+function Interests() {
+  return (
+    <div className="flex gap-4 flex-col mt-4">
+      <CVSubHeader
+        icon={<GiMountainClimbing className="w-5 h-5" />}
+        title="INTERESTS & HOBBIES"
+        containerWidth="w-14"
+      />
+      <div className="flex gap-6">
+        <div className="flex flex-col">
+          <span className="text-xs">2018</span>
+          <span className="text-xs">2025</span>
+        </div>
+        <div className="flex flex-col items-center h-full relative pt-4">
+          <div className="absolute flex flex-col rounded-full bg-black w-2 h-2"></div>
+          <div className="absolute w-[2px] h-full bg-black"></div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">ESCALADE & FITNESS</span>
+            <span className="text-xs text-gray-500">
+              Pratique régulière en salle et en extérieur.
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">LINUX & UNIX</span>
+            <span className="text-xs text-gray-500">
+              Passionné par les systèmes d’exploitation, avec une utilisation
+              active de NixOS, Arch Linux et macOS. Expérimenté dans la
+              configuration, l’automatisation et la ligne de commande.
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">PROGRAMMATION</span>
+            <span className="text-xs text-gray-500">
+              Passionné par la programmation, j’aime découvrir de nouvelles
+              technologies, méthodes de travail et bonnes pratiques de
+              développement.
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">
+              ECHANGES TECHNIQUES & COLLABORATION
+            </span>
+            <span className="text-xs text-gray-500">
+              J’aime apprendre en discutant avec d’autres développeurs,
+              participer à des meetups ou travailler en équipe sur des projets
+              collaboratifs.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function WhoAmI() {
   return (
     <div className="flex flex-col mt-8 w-full gap-4">
@@ -101,6 +161,7 @@ export default function WhoAmI() {
       <LineItem />
       <EnQuelquesMots />
       <Experiences />
+      <Interests />
     </div>
   );
 }
