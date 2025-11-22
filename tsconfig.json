@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    jsx: "react",
+    "jsx": "react",
     "esModuleInterop": true,
     "module": "esnext",
     "target": "es5",
@@ -12,7 +12,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "lib": ["dom", "dom.iterable", "esnext"]
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

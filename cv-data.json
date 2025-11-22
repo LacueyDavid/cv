@@ -1,0 +1,92 @@
+{
+  "personal": {
+    "firstName": "DAVID",
+    "lastName": "LACUEY",
+    "fullName": "LACUEY DAVID",
+    "title": "DEVELOPPEUR INFORMATIQUE",
+    "photo": "src/img/photo_cv.png",
+    "contact": {
+      "phone": "06 67 87 94 26",
+      "email": "dlacuey@student.42.fr",
+      "address": "101 Avenue Laferrière, 94000 Créteil, France",
+      "github": "https://github.com/LacueyDavid"
+    }
+  },
+  "summary": "Je suis étudiant à l'école 42, actuellement à la recherche d'un stage et disponible immédiatement. Mon parcours à 42 m'a permis de renforcer mes compétences en programmation, en résolution de problèmes et en travail d'équipe à travers des projets concrets.",
+  "formation": [
+    {
+      "degree": "ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE",
+      "school": "Ecole 42",
+      "location": "Paris",
+      "year": "2024"
+    }
+  ],
+  "experience": [
+    {
+      "period": {
+        "start": "2023",
+        "end": "2025"
+      },
+      "position": "ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE",
+      "company": "Ecole 42",
+      "location": "Paris",
+      "projects": [
+        {
+          "title": "PROJETS WEB",
+          "description": "Création d'un site (conteneurisation des services via docker-compose, contenant un jeu multijoueurs avec une base de données SQL intégrée et un chat intéractif, les technologies principales utilisées sont JavaScript, Django, Bootstrap, PostgreSQL, Docker, Docker Compose"
+        },
+        {
+          "title": "PROJETS C99",
+          "description": "Réalisation d'un shell (Utilisaiton d'un AST, Développement d'une grammaire), reproduction d'un célèbre jeu (Wolfenstein 3D) à l'aide du \"raycasting\" en utilisant une librairie graphique avec la minilibX"
+        },
+        {
+          "title": "PROJETS C++98",
+          "description": "Développement d'un serveur IRC fonctionnant sur du polling"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "competences": [
+      "REACT",
+      "TYPESCRIPT",
+      "MYSQL / MARIADB",
+      "LINUX / UNIX",
+      "C 99",
+      "C++ 98"
+    ],
+    "logiciels": [
+      "VISUAL STUDIO CODE",
+      "NEOVIM / VIM",
+      "SHELL",
+      "DOCKER",
+      "GIT"
+    ]
+  },
+  "interests": [
+    {
+      "period": {
+        "start": "2018",
+        "end": "2025"
+      },
+      "hobbies": [
+        {
+          "title": "ESCALADE & FITNESS",
+          "description": "Pratique régulière en salle et en extérieur."
+        },
+        {
+          "title": "LINUX & UNIX",
+          "description": "Passionné par les systèmes d'exploitation, avec une utilisation active de NixOS, Arch Linux et macOS. Expérimenté dans la configuration, l'automatisation et la ligne de commande."
+        },
+        {
+          "title": "PROGRAMMATION",
+          "description": "Passionné par la programmation, j'aime découvrir de nouvelles technologies, méthodes de travail et bonnes pratiques de développement."
+        },
+        {
+          "title": "ECHANGES TECHNIQUES & COLLABORATION",
+          "description": "J'aime apprendre en discutant avec d'autres développeurs, participer à des meetups ou travailler en équipe sur des projets collaboratifs."
+        }
+      ]
+    }
+  ]
+}

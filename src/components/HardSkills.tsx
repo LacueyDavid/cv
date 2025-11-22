@@ -6,7 +6,9 @@ import { IconType } from "react-icons";
 import { PiStudentFill } from "react-icons/pi";
 import { IoIosPeople } from "react-icons/io";
 import { BsGearFill } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 import { FaMobileAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import cvData from "../data/cv-data.json";
 
 interface ContactItemProps {
   icon: IconType;
@@ -29,14 +31,16 @@ const ImageItem = () => {
     <div>
       <img src={photo} alt="Logo" className="w-64 h-64 object-cover " />
       <LineItem lineHeight="h-[1px]" />
-      <ContactItem icon={FaMobileAlt} text="06 67 87 94 26" />
+      <ContactItem icon={FaMobileAlt} text={cvData.personal.contact.phone} />
       <LineItem lineHeight="h-[1px]" />
-      <ContactItem icon={FaEnvelope} text="dlacuey@student.42.fr" />
+      <ContactItem icon={FaEnvelope} text={cvData.personal.contact.email} />
       <LineItem lineHeight="h-[1px]" />
       <ContactItem
         icon={FaMapMarkerAlt}
-        text="101 Avenue Laferrière, 94000 Créteil, France"
+        text={cvData.personal.contact.address}
       />
+      <LineItem lineHeight="h-[1px]" />
+      <ContactItem icon={FaGithub} text={cvData.personal.contact.github} />
       <LineItem lineHeight="h-[1px]" />
     </div>
   );
@@ -49,12 +53,14 @@ const FormationItem = () => {
         icon={<PiStudentFill className="w-6 h-6" />}
         title="FORMATION"
       />
-      <div className="flex flex-col gap-1">
-        <span className="font-bold w-52 text-xs ">
-          ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE
-        </span>
-        <span className="w-52 text-xs">Ecole 42 / Paris / 2024</span>
-      </div>
+      {cvData.formation.map((formation: any, index: number) => (
+        <div key={index} className="flex flex-col gap-1">
+          <span className="font-bold w-52 text-xs ">{formation.degree}</span>
+          <span className="w-52 text-xs">
+            {formation.school} / {formation.location} / {formation.year}
+          </span>
+        </div>
+      ))}
     </div>
   );
 };
@@ -67,11 +73,11 @@ const LogicielsItem = () => {
         title="LOGICIELS"
       />
       <div className="flex flex-col gap-1">
-        <span className="w-52 text-xs ">VISUAL STUDIO CODE</span>
-        <span className="w-52 text-xs ">NEOVIM / VIM</span>
-        <span className="w-52 text-xs ">SHELL</span>
-        <span className="w-52 text-xs ">DOCKER</span>
-        <span className="w-52 text-xs ">GIT</span>
+        {cvData.skills.logiciels.map((logiciel: string, index: number) => (
+          <span key={index} className="w-52 text-xs ">
+            {logiciel}
+          </span>
+        ))}
       </div>
     </div>
   );
@@ -85,53 +91,11 @@ const CompetencesItem = () => {
         title="COMPETENCES"
       />
       <div className="flex flex-col gap-1">
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">REACT</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">TYPESCRIPT</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs">MYSQL / MARIADB</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">LINUX / UNIX</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">C 99</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
-
-        <div className="flex space-between gap-1 items-center">
-          <span className="w-36 text-xs ">C++ 98</span>
-          <div className="bg-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-          <div className="border-2 border-black w-4 h-4 rounded"></div>
-        </div>
+        {cvData.skills.competences.map((competence: string, index: number) => (
+          <div key={index} className="flex space-between gap-1 items-center">
+            <span className="w-36 text-xs ">{competence}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

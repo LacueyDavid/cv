@@ -75,28 +75,53 @@ function Interests() {
         title="INTERESTS & HOBBIES"
         containerWidth="w-14"
       />
-      {cvData.interests.map((interest: any, index: number) => (
-        <div key={index} className="flex gap-6">
-          <div className="flex flex-col">
-            <span className="text-xs">{interest.period.start}</span>
-            <span className="text-xs">{interest.period.end}</span>
+      <div className="flex gap-6">
+        <div className="flex flex-col">
+          <span className="text-xs">2018</span>
+          <span className="text-xs">2025</span>
+        </div>
+        <div className="flex flex-col items-center h-full relative pt-4">
+          <div className="absolute flex flex-col rounded-full bg-black w-2 h-2"></div>
+          <div className="absolute w-[2px] h-full bg-black"></div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">ESCALADE & FITNESS</span>
+            <span className="text-xs text-gray-500">
+              Pratique régulière en salle et en extérieur.
+            </span>
           </div>
-          <div className="flex flex-col items-center h-full relative pt-4">
-            <div className="absolute flex flex-col rounded-full bg-black w-2 h-2"></div>
-            <div className="absolute w-[2px] h-full bg-black"></div>
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">LINUX & UNIX</span>
+            <span className="text-xs text-gray-500">
+              Passionné par les systèmes d’exploitation, avec une utilisation
+              active de NixOS, Arch Linux et macOS. Expérimenté dans la
+              configuration, l’automatisation et la ligne de commande.
+            </span>
           </div>
-          <div className="flex flex-col gap-4">
-            {interest.hobbies.map((hobby: any, hobbyIndex: number) => (
-              <div key={hobbyIndex} className="flex flex-col gap-1">
-                <span className="font-bold text-xs">{hobby.title}</span>
-                <span className="text-xs text-gray-500">
-                  {hobby.description}
-                </span>
-              </div>
-            ))}
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">PROGRAMMATION</span>
+            <span className="text-xs text-gray-500">
+              Passionné par la programmation, j’aime découvrir de nouvelles
+              technologies, méthodes de travail et bonnes pratiques de
+              développement.
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <span className="font-bold text-xs">
+              ECHANGES TECHNIQUES & COLLABORATION
+            </span>
+            <span className="text-xs text-gray-500">
+              J’aime apprendre en discutant avec d’autres développeurs,
+              participer à des meetups ou travailler en équipe sur des projets
+              collaboratifs.
+            </span>
           </div>
         </div>
-      ))}
+      </div>
     </div>
   );
 }
