@@ -1,1 +1,9 @@
 node_modules
+
+# Python - dossier cv-automation
+cv-automation/.venv/
+cv-automation/__pycache__/
+cv-automation/*.pyc
+
+# Variables d'environnement (clés API)
+cv-automation/.env

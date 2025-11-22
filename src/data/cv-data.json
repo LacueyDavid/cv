@@ -3,7 +3,7 @@
     "firstName": "DAVID",
     "lastName": "LACUEY",
     "fullName": "LACUEY DAVID",
-    "title": "DEVELOPPEUR INFORMATIQUE",
+    "title": "CONSULTANT CYBERSÉCURITÉ GRC",
     "photo": "src/img/photo_cv.png",
     "contact": {
       "phone": "06 67 87 94 26",
@@ -12,7 +12,7 @@
       "github": "https://github.com/LacueyDavid"
     }
   },
-  "summary": "Je suis étudiant à l'école 42, actuellement à la recherche d'un stage et disponible immédiatement. Mon parcours à 42 m'a permis de renforcer mes compétences en programmation, en résolution de problèmes et en travail d'équipe à travers des projets concrets.",
+  "summary": "Consultant en cybersécurité avec expertise en gestion des risques et gouvernance. Formation technique solide avec spécialisation en sécurité des systèmes d'information. Expérience en analyse de risques, architecture sécurisée et audit de sécurité organisationnel. Maîtrise des normes ISO 27001, principes d'architecture ANSSI et méthodologies d'audit. Compétences techniques en développement sécurisé et veille cybersécurité. Anglais niveau B2. Profil adaptable avec excellentes capacités relationnelles et de synthèse.",
   "formation": [
     {
       "degree": "ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE",
@@ -32,35 +32,37 @@
       "location": "Paris",
       "projects": [
         {
-          "title": "PROJETS WEB",
-          "description": "Création d'un site (conteneurisation des services via docker-compose, contenant un jeu multijoueurs avec une base de données SQL intégrée et un chat intéractif, les technologies principales utilisées sont JavaScript, Django, Bootstrap, PostgreSQL, Docker, Docker Compose"
+          "title": "PROJETS SÉCURITÉ ET ARCHITECTURE",
+          "description": "Développement d'applications avec architecture sécurisée des SI. Analyse de risques sur projets web et implémentation de politiques de cybersécurité. Technologies de sécurité appliquées avec Docker et pratiques de développement sécurisé. Audit d'architecture et veille cybersécurité constante."
         },
         {
-          "title": "PROJETS C99",
-          "description": "Réalisation d'un shell (Utilisaiton d'un AST, Développement d'une grammaire), reproduction d'un célèbre jeu (Wolfenstein 3D) à l'aide du \"raycasting\" en utilisant une librairie graphique avec la minilibX"
+          "title": "PROJETS GOUVERNANCE ET AUDIT",
+          "description": "Développement de serveurs robustes avec architecture orientée sécurité. Méthodologies d'audit appliquées et analyse des vulnérabilités système. Gestion des risques et implémentation de bonnes pratiques de cybersécurité backend."
         },
         {
-          "title": "PROJETS C++98",
-          "description": "Développement d'un serveur IRC fonctionnant sur du polling"
+          "title": "PROJETS ANALYSE DE RISQUES",
+          "description": "Réalisation d'analyses complexes et modélisation de menaces. Développement avec techniques avancées démontrant capacités de synthèse et résolution de problèmes cybersécurité. Optimisation sécurisée et gestion des risques techniques."
         }
       ]
     }
   ],
   "skills": {
     "competences": [
-      "REACT",
-      "TYPESCRIPT",
-      "MYSQL / MARIADB",
-      "LINUX / UNIX",
-      "C 99",
-      "C++ 98"
+      "GESTION DES RISQUES",
+      "AUDIT DE SÉCURITÉ",
+      "ARCHITECTURE SÉCURISÉE DES SI",
+      "TECHNOLOGIES DE SÉCURITÉ",
+      "VEILLE CYBERSÉCURITÉ",
+      "ANALYSE DE RISQUES",
+      "ANGLAIS B2"
     ],
     "logiciels": [
-      "VISUAL STUDIO CODE",
-      "NEOVIM / VIM",
-      "SHELL",
+      "OUTILS D'AUDIT",
       "DOCKER",
-      "GIT"
+      "GIT",
+      "LINUX / UNIX",
+      "VISUAL STUDIO CODE",
+      "SHELL"
     ]
   },
   "interests": [
@@ -71,20 +73,20 @@
       },
       "hobbies": [
         {
+          "title": "CYBERSÉCURITÉ & VEILLE TECHNOLOGIQUE",
+          "description": "Passionné par la cybersécurité, veille constante sur les menaces, technologies de sécurité et nouvelles méthodologies d'audit. Étude des normes ISO 27001 et principes d'architecture sécurisée ANSSI."
+        },
+        {
+          "title": "ANALYSE & CONSEIL TECHNIQUE",
+          "description": "Excellentes capacités relationnelles développées à travers projets collaboratifs. Adaptabilité et synthèse appliquées dans résolution de problèmes complexes. Communication technique et accompagnement d'équipes."
+        },
+        {
+          "title": "SÉCURITÉ SYSTÈMES & RÉSEAUX",
+          "description": "Expertise systèmes avec utilisation active de Linux. Configuration sécurisée, audit organisationnel et gestion des risques techniques. Curiosité constante pour nouvelles technologies de sécurité."
+        },
+        {
           "title": "ESCALADE & FITNESS",
           "description": "Pratique régulière en salle et en extérieur."
-        },
-        {
-          "title": "LINUX & UNIX",
-          "description": "Passionné par les systèmes d'exploitation, avec une utilisation active de NixOS, Arch Linux et macOS. Expérimenté dans la configuration, l'automatisation et la ligne de commande."
-        },
-        {
-          "title": "PROGRAMMATION",
-          "description": "Passionné par la programmation, j'aime découvrir de nouvelles technologies, méthodes de travail et bonnes pratiques de développement."
-        },
-        {
-          "title": "ECHANGES TECHNIQUES & COLLABORATION",
-          "description": "J'aime apprendre en discutant avec d'autres développeurs, participer à des meetups ou travailler en équipe sur des projets collaboratifs."
         }
       ]
     }

@@ -1,0 +1,21 @@
+Nous recherchons un développeur Full-Stack passionné pour rejoindre notre équipe dynamique.
+
+Compétences requises :
+- Python (Django/Flask)
+- JavaScript/TypeScript, React
+- PostgreSQL
+- Docker & Kubernetes
+- Git, CI/CD
+- Expérience en architecture microservices
+
+Missions :
+- Développement de nouvelles fonctionnalités
+- Maintenance et optimisation du code existant
+- Revue de code et mentorat junior
+- Participation aux choix techniques
+
+Profil recherché :
+- Diplôme en informatique ou équivalent
+- 2+ ans d'expérience en développement web
+- Maîtrise de l'anglais technique
+- Esprit d'équipe et autonomie

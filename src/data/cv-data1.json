@@ -1,0 +1,96 @@
+{
+  "personal": {
+    "firstName": "DAVID",
+    "lastName": "LACUEY",
+    "fullName": "LACUEY DAVID",
+    "title": "DEVELOPPEUR FULL-STACK",
+    "photo": "src/img/photo_cv.png",
+    "contact": {
+      "phone": "06 67 87 94 26",
+      "email": "dlacuey@student.42.fr",
+      "address": "101 Avenue Laferrière, 94000 Créteil, France",
+      "github": "https://github.com/LacueyDavid"
+    }
+  },
+  "summary": "Développeur Full-Stack passionné, étudiant à l'école 42, avec une solide expérience en Python (Django), JavaScript/TypeScript, React et PostgreSQL. Maîtrise Docker, Git et les pratiques CI/CD. Spécialisé dans le développement web moderne avec une approche orientée microservices. Disponible immédiatement pour un stage.",
+  "formation": [
+    {
+      "degree": "ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE",
+      "school": "Ecole 42",
+      "location": "Paris",
+      "year": "2024"
+    }
+  ],
+  "experience": [
+    {
+      "period": {
+        "start": "2023",
+        "end": "2025"
+      },
+      "position": "ARCHITECTE EN TECHNOLOGIE DU NUMERIQUE",
+      "company": "Ecole 42",
+      "location": "Paris",
+      "projects": [
+        {
+          "title": "PROJETS WEB FULL-STACK",
+          "description": "Développement d'applications web complètes avec architecture microservices, utilisant Django (Python) pour le backend, React/JavaScript pour le frontend, et PostgreSQL pour la base de données. Conteneurisation avec Docker et orchestration via docker-compose. Implémentation de fonctionnalités temps réel (chat interactif) et développement de jeux multijoueurs."
+        },
+        {
+          "title": "PROJETS C++98",
+          "description": "Développement d'un serveur IRC robuste avec architecture orientée performance, utilisant le polling et les bonnes pratiques de développement backend. Expérience en optimisation de code et maintenance d'applications serveur."
+        },
+        {
+          "title": "PROJETS C99",
+          "description": "Réalisation d'un shell avec utilisation d'AST et développement de grammaire. Reproduction du jeu Wolfenstein 3D avec techniques de raycasting, démontrant des compétences en résolution de problèmes complexes et en optimisation."
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "competences": [
+      "PYTHON (DJANGO)",
+      "JAVASCRIPT / TYPESCRIPT",
+      "REACT",
+      "POSTGRESQL",
+      "DOCKER",
+      "GIT",
+      "C 99",
+      "C++ 98",
+      "LINUX / UNIX",
+      "ANGLAIS"
+    ],
+    "logiciels": [
+      "DOCKER",
+      "GIT",
+      "VISUAL STUDIO CODE",
+      "SHELL",
+      "NEOVIM / VIM"
+    ]
+  },
+  "interests": [
+    {
+      "period": {
+        "start": "2018",
+        "end": "2025"
+      },
+      "hobbies": [
+        {
+          "title": "PROGRAMMATION & DEVELOPPEMENT WEB",
+          "description": "Passionné par le développement Full-Stack, j'aime découvrir de nouvelles technologies, méthodes de travail et bonnes pratiques. Veille technologique constante sur les frameworks modernes et l'architecture microservices."
+        },
+        {
+          "title": "ECHANGES TECHNIQUES & COLLABORATION",
+          "description": "J'aime apprendre en discutant avec d'autres développeurs, participer à des meetups et travailler en équipe sur des projets collaboratifs. Esprit d'équipe développé à travers les projets de l'école 42."
+        },
+        {
+          "title": "LINUX & UNIX",
+          "description": "Passionné par les systèmes d'exploitation, avec une utilisation active de NixOS, Arch Linux et macOS. Expérimenté dans la configuration, l'automatisation et la ligne de commande."
+        },
+        {
+          "title": "ESCALADE & FITNESS",
+          "description": "Pratique régulière en salle et en extérieur."
+        }
+      ]
+    }
+  ]
+}
